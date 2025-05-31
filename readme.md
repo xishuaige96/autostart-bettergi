@@ -2,6 +2,10 @@
 
 本项目搭配原神自动化脚本BetterGI使用，实现每天定时自动启动BetterGI，并打开原神执行任务（跑狗粮、锄地等）。也完全可以当作一个应用程序 自启动+点击 的脚本（但如果不修改代码的话它会把你的原神进程关掉）。
 
+> 更新：BetterGI官方已给出了命令行参数启动功能https://bettergi.com/feats/command/introduce.html，这样可以在windows任务计划程序里一条命令`/xx/xx/BetterGI.exe start --startGroups xx xx`直接启动任务，而无需其他脚本文件。
+>
+> 但本项目依旧完善和轻便，且有启动前杀掉原神和BetterGI进程功能（长期执行稳定性会好一点点），且有详细使用教程。可放心食用。
+
 ### 原理
 
 使用windows任务计划程序定时启动本项目的脚本，脚本打开BetterGI，并用python的pyautogui操控鼠标点击BetterGI内的按键（需录制）。
@@ -31,4 +35,8 @@
 ![image-20250528232521071](readme.assets/image-20250528232521071.png)
 
 3. 此时即可运行`auto_start.exe`（以管理员身份运行），单次自动启动BetterGI。
-4. 添加定时功能。把`auto_start.exe`放进windows任务定时程序中（可参考网上的教程）。注意要点上“使用最高权限运行”。
+4. 添加定时功能。把`auto_start.exe`放进windows任务定时程序中（可参考网上的教程或下面的详细使用方法）。注意要点上“使用最高权限运行”。
+
+### 更详细的使用方法
+
+感谢@HRBCNB提供的更详细的使用方法 [使用方法.pdf](使用方法.pdf)

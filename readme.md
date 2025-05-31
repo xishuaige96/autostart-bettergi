@@ -2,7 +2,7 @@
 
 本项目搭配原神自动化脚本BetterGI使用，实现每天定时自动启动BetterGI，并打开原神执行任务（跑狗粮、锄地等）。也完全可以当作一个应用程序 自启动+点击 的脚本（但如果不修改代码的话它会把你的原神进程关掉）。
 
-> 更新：BetterGI官方已给出了命令行参数启动功能https://bettergi.com/feats/command/introduce.html，这样可以在windows任务计划程序里一条命令`/xx/xx/BetterGI.exe start --startGroups xx xx`直接启动任务，而无需其他脚本文件。
+> 更新：BetterGI官方已给出了命令行参数启动功能[link](https://bettergi.com/feats/command/introduce.html)，这样可以在windows任务计划程序里一条命令`/xx/xx/BetterGI.exe start --startGroups xx xx`直接启动任务，而无需其他脚本文件。
 >
 > 但本项目依旧完善和轻便，且有启动前杀掉原神和BetterGI进程功能（长期执行稳定性会好一点点），且有详细使用教程。可放心食用。
 
